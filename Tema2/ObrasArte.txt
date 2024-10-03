@@ -1,0 +1,25 @@
+sudo apt update
+sudo apt install mysql-client mysql-server
+systemctl enable --now mysql
+sudo mysql_secure_installation(y, 0, n, n, n, y)
+sudo mysql -u root
+
+create database 1dam
+use 1dam
+
+create table if not exists ObrasArte ( titulo varchar(20) primary key, artista varchar(30), fechaCreacion varchar(10), tecnica varchar(15), museo varchar(15) );
+
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('La Gioconda', 'Leonardo da Vinci', 1503, 'sfumato', 'Louvre');
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('La noche estrellada', 'Van gohg', 1889, 'Oleo', 'MoMA');
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('Las Meninas', 'Velázquez', 1656, 'alla prima', 'El Prado');
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('La Capilla Sixtina', 'Miguel Ángel', 1508, 'Fresco común', 'El Vaticano');
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('El Guernica', 'Pablo Picasso', 1937, 'Óleo sobre lienzo', 'Reina Sofía');
+
+
+set global validate_password.length=5;
+create user 'usuario'@'localhost' identified by 'usuario';
+grant all privileges on 1dam.* to 'usuario'@'localhost';
+flush privileges;
+
+
+mysql -u usuario -pusuario;
