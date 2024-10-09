@@ -13,7 +13,7 @@ insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('
 insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('La noche estrellada', 'Van gohg', 1889, 'Oleo', 'MoMA');
 insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('Las Meninas', 'Velázquez', 1656, 'alla prima', 'El Prado');
 insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('La Capilla Sixtina', 'Miguel Ángel', 1508, 'Fresco común', 'El Vaticano');
-insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('El Guernica', 'Pablo Picasso', 1937, 'Óleo sobre lienzo', 'Reina Sofía');
+insert into ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) values ('El Guernica', 'Pablo Picasso', 1937, 'Óleo', 'Reina Sofía');
 
 
 set global validate_password.length=5;
