@@ -29,6 +29,8 @@ try:
         cursor.execute("INSERT INTO ObrasArte (titulo, artista, fechaCreacion, tecnica, museo) VALUES (%s, %s, %s, %s, %s)",
             (titulo, artista, fecha, tecnica, museo)
         )
+        end_time = time.time()
+    print(f"Tiempo de inserción con pymysql: {end_time - start_time} segundos")
 except MySQLError as e:
     print(f"Error de conexion: {e}")
 finally:
@@ -37,5 +39,4 @@ finally:
 
 
 
-end_time = time.time()
-print(f"Tiempo de inserción con pymysql: {end_time - start_time} segundos")
+

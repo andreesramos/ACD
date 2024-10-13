@@ -1,11 +1,11 @@
 import time
-import mysql.connector
-from mysql.connector import Error
+import pymysql
+from pymysql import MySQLError
 
 start_time = time.time()
 
 try:
-    conexion=mysql.connector.connect(
+    conexion=pymysql.connect(
         host='localhost',
         user='usuario',
         password='usuario',
@@ -20,8 +20,8 @@ try:
         cursor.fetchall()
 
     end_time = time.time()
-    print(f"Tiempo de lectura con mysql-connector: {end_time - start_time} segundos")
-except Error as e:
+    print(f"Tiempo de lectura con pymysql: {end_time - start_time} segundos")
+except MySQLError as e:
     print(f"Error de conexion: {e}")
 finally:
     if conexion is not None:
