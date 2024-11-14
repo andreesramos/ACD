@@ -3,5 +3,5 @@ db.ObrasArte.insertMany([
  { "titulo": "La Noche Estrellada", "artista": "Van Gogh", "fechaCreacion": 1889, "tecnica": "Óleo", "museo": "MoMA" },
  { "titulo": "Las Meninas", "artista": "Velazquez", "fechaCreacion": 1656, "museo": "El Prado", "fechaRestauracion":  2018 },
  { "titulo": "La Capilla Sixtina", "artista": "Leonardo da Vinci", "tecnica": "Fresco comun", "museo": "El Vaticano", "ciudad": "Ciudad del Vaticano" },
- { "titulo": "El Guernica", "artista": "Pablo Picasso", "fechaCreacion": 1937, "museo": "Reina Sofia", "descripcion": "Obra icónica sobre los horrores de la guerra civil española" }
+ { "titulo": "El Guernica", "artista": "Pablo Picasso", "fechaCreacion": 1937, "museo": "Reina Sofia", "descripcion": "Obra icónica sobre los horrores de la guerra civil en España" }
  ])
