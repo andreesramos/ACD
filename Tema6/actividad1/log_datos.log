@@ -1,0 +1,9 @@
+2024-11-21 09:32:20,769 - INFO - Transacción iniciada.
+2024-11-21 09:32:20,769 - INFO - Dato agregado: {'titulo': 'La noche estrellada', 'artista': 'Van Gogh', 'fechaCreacion': 1889, 'tecnica': 'Oleo', 'museo': 'MoMA'}
+2024-11-21 09:32:20,769 - INFO - Dato agregado: {'titulo': 'La Gioconda', 'artista': 'Leonardo da Vinci', 'fechaCreacion': 1503, 'tecnica': 'sfumato', 'museo': 'Louvre'}
+2024-11-21 09:32:20,769 - INFO - Dato agregado: {'titulo': 'Las meninas', 'artista': 'Velazquez', 'fechaCreacion': 1656, 'tecnica': 'alla prima', 'museo': 'El Prado'}
+2024-11-21 09:32:20,769 - INFO - Transacción confirmada y cambios guardados.
+2024-11-21 09:32:20,769 - INFO - Configuración actualizada. Nueva ruta del archivo: obras.csv
+2024-11-21 09:32:20,769 - INFO - Transacción iniciada.
+2024-11-21 09:32:20,769 - INFO - Archivo CSV guardado. Versión actual: 3
+2024-11-21 09:32:20,770 - INFO - Transacción confirmada y cambios guardados.

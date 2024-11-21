@@ -1,0 +1,25 @@
+2024-11-21 10:10:09,402 - INFO - Conexión exitosa a la base de datos.
+2024-11-21 10:10:09,403 - ERROR - Error al insertar la obra de arte 'La Gioconda': 1054 (42S22): Unknown column 'utecnicaso' in 'field list'
+2024-11-21 10:11:21,089 - INFO - Conexión exitosa a la base de datos.
+2024-11-21 10:11:21,089 - ERROR - Error al insertar la obra de arte 'La Gioconda': 1054 (42S22): Unknown column 'utecnicaso' in 'field list'
+2024-11-21 10:11:21,090 - INFO - Obras de arte recuperadas:
+2024-11-21 10:11:21,090 - INFO - {'id': 6, 'titulo': 'La Capilla Sixtina', 'artista': 'Miguel Ángel', 'fechaCreacion': '1508', 'tecnica': 'Fresco común', 'museo': 'El Vaticano'}
+2024-11-21 10:11:21,090 - INFO - {'id': 7, 'titulo': 'El Guernica', 'artista': 'Pablo Picasso', 'fechaCreacion': '1937', 'tecnica': 'Óleo', 'museo': 'Reina Sofía'}
+2024-11-21 10:11:21,090 - INFO - Obra de arte con tituloLa Gioconda actualizada exitosamente.
+2024-11-21 10:11:21,091 - ERROR - Error al eliminar la obra de arte con titulo El Guernica: Could not process parameters: str(El Guernica), it must be of type list, tuple or dict
+2024-11-21 10:11:21,091 - INFO - Transacción iniciada.
+2024-11-21 10:11:21,091 - ERROR - Error al insertar la obra de arte 'La noche estrellada': 1054 (42S22): Unknown column 'utecnicaso' in 'field list'
+2024-11-21 10:11:21,091 - INFO - Transacción revertida.
+2024-11-21 10:11:21,092 - INFO - Conexión cerrada.
+2024-11-21 10:13:29,490 - INFO - Conexión exitosa a la base de datos.
+2024-11-21 10:13:29,491 - INFO - Obra de arte 'La Gioconda' insertada exitosamente.
+2024-11-21 10:13:29,491 - INFO - Obras de arte recuperadas:
+2024-11-21 10:13:29,491 - INFO - {'id': 6, 'titulo': 'La Capilla Sixtina', 'artista': 'Miguel Ángel', 'fechaCreacion': '1508', 'tecnica': 'Fresco común', 'museo': 'El Vaticano'}
+2024-11-21 10:13:29,491 - INFO - {'id': 7, 'titulo': 'El Guernica', 'artista': 'Pablo Picasso', 'fechaCreacion': '1937', 'tecnica': 'Óleo', 'museo': 'Reina Sofía'}
+2024-11-21 10:13:29,491 - INFO - {'id': 8, 'titulo': 'La Gioconda', 'artista': 'Leonardo da Vinci', 'fechaCreacion': '1503', 'tecnica': 'sfumato', 'museo': 'Louvre'}
+2024-11-21 10:13:29,522 - INFO - Obra de arte con tituloLa Gioconda actualizada exitosamente.
+2024-11-21 10:13:29,523 - ERROR - Error al eliminar la obra de arte con titulo El Guernica: Could not process parameters: str(El Guernica), it must be of type list, tuple or dict
+2024-11-21 10:13:29,523 - INFO - Transacción iniciada.
+2024-11-21 10:13:29,523 - INFO - Obra de arte 'La noche estrellada' insertada exitosamente.
+2024-11-21 10:13:29,540 - INFO - Transacción revertida.
+2024-11-21 10:13:29,541 - INFO - Conexión cerrada.

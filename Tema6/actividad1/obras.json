@@ -1,0 +1,23 @@
+[
+    {
+        "titulo": "La noche estrellada",
+        "artista": "Van Gogh",
+        "fechaCreacion": 1889,
+        "tecnica": "Oleo",
+        "museo": "MoMA"
+    },
+    {
+        "titulo": "La Gioconda",
+        "artista": "Leonardo da Vinci",
+        "fechaCreacion": 1503,
+        "tecnica": "sfumato",
+        "museo": "Louvre"
+    },
+    {
+        "titulo": "Las meninas",
+        "artista": "Velazquez",
+        "fechaCreacion": 1656,
+        "tecnica": "alla prima",
+        "museo": "El Prado"
+    }
+]
