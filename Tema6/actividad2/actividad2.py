@@ -88,7 +88,7 @@ class DatabaseManager:
         try:
             cursor = self.connection.cursor()
             query = "DELETE FROM ObrasArte WHERE titulo = %s"
-            cursor.execute(query, (titulo))
+            cursor.execute(query, (titulo,))
             self.connection.commit()
             logging.info(f"Obra de arte con titulo {titulo} eliminada exitosamente.")
         except Error as e:

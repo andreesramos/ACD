@@ -1,0 +1,15 @@
+2024-11-25 14:34:09,440 - INFO - Conectado a MongoDB: 1dam.herramientas
+2024-11-25 14:34:09,440 - INFO - Transacción iniciada.
+2024-11-25 14:34:09,568 - INFO - Documento insertado con ID: 67447cd11c5f918e4ceba2ab
+2024-11-25 14:34:09,569 - INFO - Documento insertado con ID: 67447cd11c5f918e4ceba2ac
+2024-11-25 14:34:09,569 - INFO - Transacción confirmada.
+2024-11-25 14:34:09,586 - INFO - Documentos recuperados: 2
+2024-11-25 14:34:09,586 - INFO - {'_id': ObjectId('67447cd11c5f918e4ceba2ab'), 'titulo': 'La Gioconda', 'artista': 'Leonardo da Vinci', 'fechaCreacion': 1503, 'tecnica': 'sfumato', 'museo': 'Louvre'}
+2024-11-25 14:34:09,587 - INFO - {'_id': ObjectId('67447cd11c5f918e4ceba2ac'), 'titulo': 'La noche estrellada', 'artista': 'Van Gogh', 'fechaCreacion': 1889, 'tecnica': 'oleo', 'museo': 'MoMA'}
+2024-11-25 14:34:09,587 - INFO - Transacción iniciada.
+2024-11-25 14:34:09,603 - INFO - Documento actualizado: {'titulo': 'La Gioconda'}
+2024-11-25 14:34:09,603 - INFO - Transacción confirmada.
+2024-11-25 14:34:09,603 - INFO - Transacción iniciada.
+2024-11-25 14:34:09,607 - INFO - Documento eliminado: {'titulo': 'La noche estrellada'}
+2024-11-25 14:34:09,607 - INFO - Transacción confirmada.
+2024-11-25 14:34:09,608 - INFO - Conexión a MongoDB cerrada.
