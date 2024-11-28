@@ -1,0 +1,208 @@
+- pymysql
+- mysql-connector
+- ZODB
+- persistent
+- transaction
+- pewee
+- cryptography
+
+
+PASAR DE MYSQL A ZODB
+import mysql.connector
+from persistent import Persistent
+import ZODB, ZODB.FileStorage, transaction
+# 1. Clase Producto para la base de datos orientada a objetos ZODB
+class Producto(Persistent):
+def __init__(self, id, nombre, categoria, precio):
+self.id = id
+self.nombre = nombre
+self.categoria = categoria
+self.precio = precio
+# 2. Conectar a MySQL y agregar productos
+def insertar_en_mysql():
+conn = mysql.connector.connect(
+host='localhost',
+user='usuario',
+# Usuario de MySQL
+password='usuario',
+# Contraseña de MySQL
+database='ejemplo'
+)
+cursor = conn.cursor()
+# Insertar varias instancias de Producto en MySQL
+productos = [
+('Martillo', 'Herramientas', 12.99),
+('Taladro', 'Herramientas', 49.99),
+('Sierra', 'Herramientas', 29.99)
+]
+for producto in productos:
+cursor.execute("INSERT INTO producto (nombre, categoria, precio)
+VALUES (%s, %s, %s)", producto)
+conn.commit()
+# Confirmar la transacción
+print("Productos insertados en MySQL")
+cursor.close()
+conn.close()
+30ACCESO A DATOS
+# 3. Consultar productos desde MySQL y almacenarlos en un diccionario
+def consultar_y_almacenar():
+conn = mysql.connector.connect(
+host='localhost',
+user='usuario',
+password='usuario',
+database='ejemplo'
+)
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM producto")
+productos = cursor.fetchall()
+# Consulta todos los productos
+# Devuelve todas las filas
+productos_dict = {}
+# Almacenar los productos en un diccionario
+for producto in productos:
+id_producto = producto[0]
+nombre = producto[1]
+categoria = producto[2]
+precio = producto[3]
+# Almacenar en el diccionario
+productos_dict[id_producto] = Producto(id_producto, nombre, categoria,
+precio)
+cursor.close()
+conn.close()
+return productos_dict
+# 4. Almacenar los productos en ZODB
+def almacenar_en_zodb(productos_dict):
+storage = ZODB.FileStorage.FileStorage('productos.fs')
+# Nombre del
+archivo de la base de datos ZODB
+db = ZODB.DB(storage)
+connection = db.open()
+root = connection.root()
+if 'productos' not in root:
+31ACCESO A DATOS
+root['productos'] = {}
+# Almacenar los productos en ZODB
+for id_producto, producto in productos_dict.items():
+root['productos'][id_producto] = producto
+transaction.commit()
+# Confirmar los cambios en ZODB
+print("Productos almacenados en ZODB")
+connection.close()
+db.close()
+# 5. Función para mostrar los productos almacenados en ZODB
+def mostrar_productos_zodb():
+storage = ZODB.FileStorage.FileStorage('productos.fs')
+# Nombre del
+archivo de la base de datos ZODB
+db = ZODB.DB(storage)
+connection = db.open()
+root = connection.root()
+if 'productos' in root:
+productos = root['productos']
+print("Productos almacenados en ZODB:")
+for id_producto, producto in productos.items():
+print(f"ID: {producto.id}, Nombre: {producto.nombre}, Categoría:
+{producto.categoria}, Precio: {producto.precio}")
+else:
+print("No hay productos almacenados en ZODB.")
+connection.close()
+db.close()
+# 6. Función principal para ejecutar todo el proceso
+def main():
+insertar_en_mysql()
+# Insertar productos en MySQL
+productos_dict = consultar_y_almacenar()
+# Consultar y almacenar en un
+diccionario
+almacenar_en_zodb(productos_dict)
+mostrar_productos_zodb()
+# Almacenar los productos en ZODB
+# Mostrar los productos almacenados en ZODB
+# Ejecutar el proceso directamente
+main()
+32ACCESO A DATOS
+PASAR DE ZODB A MYSQL
+import ZODB, ZODB.FileStorage, transaction
+import mysql.connector
+from persistent import Persistent
+# Clase Producto
+class Producto(Persistent):
+def __init__(self, id, nombre, categoria, precio):
+self.id = id
+self.nombre = nombre
+self.categoria = categoria
+self.precio = precio
+# 1. Función para conectar a ZODB y recuperar datos
+def recuperar_de_zodb():
+# Abrir conexión a ZODB
+storage = ZODB.FileStorage.FileStorage('productos.fs')
+# Archivo de la
+base de datos ZODB
+db = ZODB.DB(storage)
+connection = db.open()
+root = connection.root()
+33ACCESO A DATOS
+# Recuperar productos desde ZODB
+productos = {}
+if 'productos' in root:
+productos = root['productos']
+print("Productos recuperados de ZODB:")
+for id_producto, producto in productos.items():
+print(f"ID: {producto.id}, Nombre: {producto.nombre}, Categoría:
+{producto.categoria}, Precio: {producto.precio}")
+else:
+print("No hay productos almacenados en ZODB.")
+# Cerrar la conexión
+connection.close()
+db.close()
+return productos
+# 2. Función para insertar datos en MySQL
+def insertar_en_mysql(productos):
+# Conectar a la base de datos MySQL
+conn = mysql.connector.connect(
+34ACCESO A DATOS
+host='localhost',
+user='usuario',
+# Cambia por tu usuario
+password='contraseña',
+database='ejemplo'
+# Cambia por tu contraseña
+# Cambia por tu base de datos
+)
+cursor = conn.cursor()
+# Crear la tabla si no existe
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS producto (
+id INT PRIMARY KEY,
+nombre VARCHAR(255),
+categoria VARCHAR(255),
+precio DECIMAL(10, 2)
+)
+""")
+# Insertar datos en la tabla producto
+for id_producto, producto in productos.items():
+cursor.execute("""
+35ACCESO A DATOS
+INSERT INTO producto (id, nombre, categoria, precio)
+VALUES (%s, %s, %s, %s)
+ON DUPLICATE KEY UPDATE
+nombre = VALUES(nombre),
+categoria = VALUES(categoria),
+precio = VALUES(precio)
+""", (producto.id, producto.nombre, producto.categoria,
+producto.precio))
+conn.commit()
+# Confirmar transacción
+print("Productos insertados/actualizados en MySQL.")
+# Cerrar la conexión
+cursor.close()
+conn.close()
+# 3. Función principal
+def main():
+productos = recuperar_de_zodb()
+insertar_en_mysql(productos)
+# Recuperar datos de ZODB
+# Insertar datos en MySQL
+36ACCESO A DATOS
+# Ejecutar el proceso
+main()
