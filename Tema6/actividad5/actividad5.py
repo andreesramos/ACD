@@ -93,6 +93,7 @@ class DatabaseManagerObject:
             logging.info(f"Obra de arte con ID {id} creada exitosamente.")
         except Exception as e:
             logging.error(f"Error al crear la obra de arte con ID {id}: {e}")
+            raise ValueError(f"Ya existe una obra de arte con ID {id}.")
 
     def leer_obrasArte(self):
         """Lee y muestra todas las obras de arte almacenadas."""
@@ -131,6 +132,7 @@ class DatabaseManagerObject:
             logging.info(f"Obra de arte con ID {id} eliminada exitosamente.")
         except Exception as e:
             logging.error(f"Error al eliminar la obra ed arte con ID {id}: {e}")
+            raise ValueError(f"No existe una obra de arte con ID {id}.")
 
 
 if __name__ == "__main__":

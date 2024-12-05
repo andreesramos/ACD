@@ -1,136 +1,27 @@
-2024-12-02 13:12:08,900 - INFO - Conexión establecida con ZODB.
-2024-12-02 13:12:08,900 - INFO - Transacción iniciada.
-2024-12-02 13:12:08,900 - INFO - Obra de arte con ID 1 creada exitosamente.
-2024-12-02 13:12:08,900 - INFO - Obra de arte con ID 2 creada exitosamente.
-2024-12-02 13:12:08,900 - INFO - Obra de arte con ID 3 creada exitosamente.
-2024-12-02 13:12:08,900 - INFO - Transacción confirmada.
-2024-12-02 13:12:08,900 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:12:08,900 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:12:08,900 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:12:08,900 - INFO - Transacción iniciada.
-2024-12-02 13:12:08,900 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
-2024-12-02 13:12:08,900 - INFO - Transacción confirmada.
-2024-12-02 13:12:08,900 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:12:08,900 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:12:08,900 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:12:08,900 - INFO - Transacción iniciada.
-2024-12-02 13:12:08,900 - INFO - Obra de arte con ID 1 actualizada exitosamente.
-2024-12-02 13:12:08,900 - INFO - Transacción confirmada.
-2024-12-02 13:12:08,900 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:12:08,901 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:12:08,901 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:12:08,901 - INFO - Transacción iniciada.
-2024-12-02 13:12:08,901 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
-2024-12-02 13:12:08,901 - INFO - Transacción confirmada.
-2024-12-02 13:12:08,901 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:12:08,901 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:12:08,901 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:12:08,901 - INFO - Conexión a ZODB cerrada.
-2024-12-02 13:16:15,931 - INFO - Conexión establecida con ZODB.
-2024-12-02 13:16:15,931 - INFO - Transacción iniciada.
-2024-12-02 13:16:15,931 - INFO - Obra de arte con ID 1 creada exitosamente.
-2024-12-02 13:16:15,931 - INFO - Obra de arte con ID 2 creada exitosamente.
-2024-12-02 13:16:15,931 - INFO - Obra de arte con ID 3 creada exitosamente.
-2024-12-02 13:16:15,931 - INFO - Transacción confirmada.
-2024-12-02 13:16:15,931 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:16:15,931 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:16:15,931 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:16:15,931 - INFO - Transacción iniciada.
-2024-12-02 13:16:15,931 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
-2024-12-02 13:16:15,931 - INFO - Transacción confirmada.
-2024-12-02 13:16:15,932 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:16:15,932 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:16:15,932 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:16:15,932 - INFO - Transacción iniciada.
-2024-12-02 13:16:15,932 - INFO - Obra de arte con ID 1 actualizada exitosamente.
-2024-12-02 13:16:15,932 - INFO - Transacción confirmada.
-2024-12-02 13:16:15,932 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:16:15,932 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:16:15,932 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:16:15,932 - INFO - Transacción iniciada.
-2024-12-02 13:16:15,932 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
-2024-12-02 13:16:15,932 - INFO - Transacción confirmada.
-2024-12-02 13:16:15,932 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:16:15,932 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:16:15,932 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:20:04,823 - INFO - Conexión establecida con ZODB.
-2024-12-02 13:20:04,823 - INFO - Transacción iniciada.
-2024-12-02 13:20:04,823 - INFO - Obra de arte con ID 1 creada exitosamente.
-2024-12-02 13:20:04,823 - INFO - Obra de arte con ID 2 creada exitosamente.
-2024-12-02 13:20:04,823 - INFO - Obra de arte con ID 3 creada exitosamente.
-2024-12-02 13:20:04,823 - INFO - Transacción confirmada.
-2024-12-02 13:20:04,823 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:20:04,823 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:20:04,823 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:20:04,823 - INFO - Transacción iniciada.
-2024-12-02 13:20:04,823 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
-2024-12-02 13:20:04,823 - INFO - Transacción confirmada.
-2024-12-02 13:20:04,823 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:20:04,823 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:20:04,823 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:20:04,823 - INFO - Transacción iniciada.
-2024-12-02 13:20:04,824 - INFO - Obra de arte con ID 1 actualizada exitosamente.
-2024-12-02 13:20:04,824 - INFO - Transacción confirmada.
-2024-12-02 13:20:04,824 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:20:04,824 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:20:04,824 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:20:04,824 - INFO - Transacción iniciada.
-2024-12-02 13:20:04,824 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
-2024-12-02 13:20:04,824 - INFO - Transacción confirmada.
-2024-12-02 13:20:04,824 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:20:04,824 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:20:04,824 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:21:15,698 - INFO - Conexión establecida con ZODB.
-2024-12-02 13:21:15,698 - INFO - Transacción iniciada.
-2024-12-02 13:21:15,698 - INFO - Obra de arte con ID 1 creada exitosamente.
-2024-12-02 13:21:15,698 - INFO - Obra de arte con ID 2 creada exitosamente.
-2024-12-02 13:21:15,698 - INFO - Obra de arte con ID 3 creada exitosamente.
-2024-12-02 13:21:15,698 - INFO - Transacción confirmada.
-2024-12-02 13:21:15,698 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:21:15,698 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:21:15,698 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:21:15,698 - INFO - Transacción iniciada.
-2024-12-02 13:21:15,698 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
-2024-12-02 13:21:15,699 - INFO - Transacción confirmada.
-2024-12-02 13:21:15,699 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-02 13:21:15,699 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:21:15,699 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:21:15,699 - INFO - Transacción iniciada.
-2024-12-02 13:21:15,699 - INFO - Obra de arte con ID 1 actualizada exitosamente.
-2024-12-02 13:21:15,699 - INFO - Transacción confirmada.
-2024-12-02 13:21:15,699 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:21:15,699 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:21:15,699 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-02 13:21:15,699 - INFO - Transacción iniciada.
-2024-12-02 13:21:15,699 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
-2024-12-02 13:21:15,699 - INFO - Transacción confirmada.
-2024-12-02 13:21:15,699 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-02 13:21:15,699 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-02 13:21:15,699 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-05 08:56:37,993 - INFO - Conexión establecida con ZODB.
-2024-12-05 08:56:37,993 - INFO - Transacción iniciada.
-2024-12-05 08:56:37,993 - INFO - Obra de arte con ID 1 creada exitosamente.
-2024-12-05 08:56:37,993 - INFO - Obra de arte con ID 2 creada exitosamente.
-2024-12-05 08:56:37,993 - INFO - Obra de arte con ID 3 creada exitosamente.
-2024-12-05 08:56:37,993 - INFO - Transacción confirmada.
-2024-12-05 08:56:37,993 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-05 08:56:37,993 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-05 08:56:37,993 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-05 08:56:37,993 - INFO - Transacción iniciada.
-2024-12-05 08:56:37,993 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
-2024-12-05 08:56:37,993 - INFO - Transacción confirmada.
-2024-12-05 08:56:37,994 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
-2024-12-05 08:56:37,994 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-05 08:56:37,994 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-05 08:56:37,994 - INFO - Transacción iniciada.
-2024-12-05 08:56:37,994 - INFO - Obra de arte con ID 1 actualizada exitosamente.
-2024-12-05 08:56:37,994 - INFO - Transacción confirmada.
-2024-12-05 08:56:37,994 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-05 08:56:37,994 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-05 08:56:37,994 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
-2024-12-05 08:56:37,994 - INFO - Transacción iniciada.
-2024-12-05 08:56:37,994 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
-2024-12-05 08:56:37,994 - INFO - Transacción confirmada.
-2024-12-05 08:56:37,994 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
-2024-12-05 08:56:37,994 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
-2024-12-05 08:56:37,994 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
+2024-12-05 10:23:58,692 - INFO - Conexión establecida con ZODB.
+2024-12-05 10:23:58,692 - INFO - Transacción iniciada.
+2024-12-05 10:23:58,693 - INFO - Obra de arte con ID 1 creada exitosamente.
+2024-12-05 10:23:58,693 - INFO - Obra de arte con ID 2 creada exitosamente.
+2024-12-05 10:23:58,693 - INFO - Obra de arte con ID 3 creada exitosamente.
+2024-12-05 10:23:58,693 - INFO - Transacción confirmada.
+2024-12-05 10:23:58,693 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
+2024-12-05 10:23:58,693 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
+2024-12-05 10:23:58,693 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
+2024-12-05 10:23:58,693 - INFO - Transacción iniciada.
+2024-12-05 10:23:58,693 - ERROR - Error al crear la obra de arte con ID 2: Ya existe una obra de arte con ID 2.
+2024-12-05 10:23:58,693 - INFO - Transacción revertida.
+2024-12-05 10:23:58,693 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1503, Tecnica: sfumato, Museo: Louvre
+2024-12-05 10:23:58,693 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
+2024-12-05 10:23:58,693 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
+2024-12-05 10:23:58,693 - INFO - Transacción iniciada.
+2024-12-05 10:23:58,693 - INFO - Obra de arte con ID 1 actualizada exitosamente.
+2024-12-05 10:23:58,693 - INFO - Transacción confirmada.
+2024-12-05 10:23:58,693 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
+2024-12-05 10:23:58,693 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
+2024-12-05 10:23:58,693 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
+2024-12-05 10:23:58,693 - INFO - Transacción iniciada.
+2024-12-05 10:23:58,693 - ERROR - Error al eliminar la obra ed arte con ID 5: No existe una obra de arte con ID 5.
+2024-12-05 10:23:58,693 - INFO - Transacción revertida.
+2024-12-05 10:23:58,693 - INFO - ID: 1, Titulo: La Gioconda, Artista: Leonardo da Vinci, Fecha de creacion: 1600, Tecnica: oleo, Museo: Louvre
+2024-12-05 10:23:58,693 - INFO - ID: 2, Titulo: Las Meninas, Artista: Velazquez, Fecha de creacion: 1656, Tecnica: alla prima, Museo: El Prado
+2024-12-05 10:23:58,693 - INFO - ID: 3, Titulo: El Guernica, Artista: Pablo Picasso, Fecha de creacion: 1937, Tecnica: oleo, Museo: Reina Sofia
