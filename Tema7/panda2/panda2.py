@@ -82,3 +82,19 @@ def calcular_descuento(row):
 df["descuento(%)"] = df.apply(calcular_descuento, axis=1)
 #Mostrar un ejemplo
 print(df.head())
+
+print("\nUnir DataFrames")
+# Crear un DataFrame adicional con información de las regiones de las tallas
+paises_data = {
+    "size": ["1", "40", "UK-09"],
+    "country": ["EEUU", "España", "Reino Unido"]
+}
+paises_df = pd.DataFrame(paises_data)
+
+#Unir la talla al pais
+df_merged = df.merge(paises_df, on="size", how="inner")
+df_merged = df_merged.rename(columns={"country": "paises"})
+
+# Mostrar los primeros 5 resultados con las regiones
+print(df_merged[["brand", "color", "size", "paises"]])
+
