@@ -1,0 +1,7 @@
+Pip
+
+pip install mysql-connector-python pymysql
+pip install peewee
+pip install pymongo
+pip install transaction persistent ZODB
+pip install cryptography
