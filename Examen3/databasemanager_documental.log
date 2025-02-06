@@ -1,0 +1,33 @@
+2025-02-06 10:00:20,308 - INFO - Conectado a MongoDB: 1dam.productos
+2025-02-06 10:00:20,309 - INFO - Productos eliminados exitosamente
+2025-02-06 10:00:20,310 - INFO - Transacción iniciada.
+2025-02-06 10:00:20,310 - INFO - Documentos insertados exitosamente
+2025-02-06 10:00:20,310 - INFO - Transacción confirmada.
+2025-02-06 10:00:20,310 - INFO - Transacción iniciada.
+2025-02-06 10:00:20,311 - INFO - Productos recuperados: 1
+2025-02-06 10:00:20,311 - INFO - {'nombre': 'Auriculares Sonic Boom', 'precio': 299.99, 'stock': 15}
+2025-02-06 10:00:20,311 - INFO - Transacción confirmada.
+2025-02-06 10:00:20,311 - INFO - Productos recuperados: 5
+2025-02-06 10:00:20,311 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7c'), 'nombre': 'Drone Phantom X', 'categoria': 'Drones', 'precio': 1200.5, 'stock': 8}
+2025-02-06 10:00:20,311 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7d'), 'nombre': 'Auriculares Sonic Boom', 'categoria': 'Auriculares', 'precio': 299.99, 'stock': 15}
+2025-02-06 10:00:20,311 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7e'), 'nombre': 'Cámara Action Pro', 'categoria': 'Cámaras', 'precio': 499.99, 'stock': 10}
+2025-02-06 10:00:20,311 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7f'), 'nombre': 'Asistente SmartBuddy', 'categoria': 'Asistentes Inteligentes', 'precio': 199.99, 'stock': 20}
+2025-02-06 10:00:20,311 - INFO - {'_id': ObjectId('67a47a243147a11de7635c80'), 'nombre': 'Cargador Solar Ultra', 'categoria': 'Accesorios', 'precio': 49.99, 'stock': 3}
+2025-02-06 10:00:20,311 - INFO - Transacción iniciada.
+2025-02-06 10:00:20,311 - INFO - Productos actualizados exitosamente
+2025-02-06 10:00:20,311 - INFO - Transacción confirmada.
+2025-02-06 10:00:20,312 - INFO - Productos recuperados: 5
+2025-02-06 10:00:20,312 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7c'), 'nombre': 'Drone Phantom X', 'categoria': 'Drones', 'precio': 1300, 'stock': 8}
+2025-02-06 10:00:20,312 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7d'), 'nombre': 'Auriculares Sonic Boom', 'categoria': 'Auriculares', 'precio': 299.99, 'stock': 15}
+2025-02-06 10:00:20,312 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7e'), 'nombre': 'Cámara Action Pro', 'categoria': 'Cámaras', 'precio': 1300, 'stock': 10}
+2025-02-06 10:00:20,312 - INFO - {'_id': ObjectId('67a47a243147a11de7635c7f'), 'nombre': 'Asistente SmartBuddy', 'categoria': 'Asistentes Inteligentes', 'precio': 199.99, 'stock': 20}
+2025-02-06 10:00:20,312 - INFO - {'_id': ObjectId('67a47a243147a11de7635c80'), 'nombre': 'Cargador Solar Ultra', 'categoria': 'Accesorios', 'precio': 49.99, 'stock': 3}
+2025-02-06 10:00:20,312 - INFO - Numero de documentos: 5
+2025-02-06 10:00:20,312 - INFO - Transacción iniciada.
+2025-02-06 10:00:20,313 - INFO - Productos eliminados exitosamente
+2025-02-06 10:00:20,313 - INFO - Transacción confirmada.
+2025-02-06 10:00:20,313 - INFO - Numero de documentos: 4
+2025-02-06 10:00:20,313 - INFO - Productos recuperados: 2
+2025-02-06 10:00:20,313 - INFO - {'nombre': 'Cámara Action Pro', 'categoria': 'Cámaras', 'precio': 1300}
+2025-02-06 10:00:20,313 - INFO - {'nombre': 'Drone Phantom X', 'categoria': 'Drones', 'precio': 1300}
+2025-02-06 10:00:20,314 - INFO - Conexión a MongoDB cerrada.
