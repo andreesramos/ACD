@@ -1,16 +1,29 @@
-import pandas as pd;
+import pandas as pd
+from sklearn.preprocessing import OrdinalEncoder
 
-df = pd.read_csv('preciosZapatos.csv')
+df = pd.read_csv("insurance.csv")
+encoded = OrdinalEncoder()
 
-#Añadir columna de euros
-df["price_euros"] = df["price"] * 0.0121
+print('Correlación de la edad con costo de seguro')
+print(df[['charges','age']].corr())
 
-#One-Hot Encoding
-df_encoded_color = pd.get_dummies(df, columns=["color"], drop_first=False)
-df_encoded_brand = pd.get_dummies(df, columns=["brand"], drop_first=False)
+print('\nCorrelación del sexo con costo de seguro')
+df[['sex']] = encoded.fit_transform(df[['sex']])
+df[['sex']] = df[['sex']].astype(int)
+print(df[['charges', 'sex']].corr())
 
-print(df_encoded_color.head())
+print('\nCorrelación del indice de peso corporal con costo de seguro')
+print(df[['charges','bmi']].corr())
 
-# print(df[['brand', 'price_euros']].corr())
-# print(df[['size', 'price_euros']].corr())
-# print(df[['color', 'price_euros']].corr())
+print('\nCorrelación del nº de hijos con costo de seguro')
+print(df[['charges','children']].corr())
+
+print('\nCorrelación de si es o no fumador con costo de seguro')
+df[['smoker']] = encoded.fit_transform(df[['smoker']])
+df[['smoker']] = df[['smoker']].astype(int)
+print(df[['charges', 'smoker']].corr())
+
+print('\nCorrelación de la region con costo de seguro')
+df[['region']] = encoded.fit_transform(df[['region']])
+df[['region']] = df[['region']].astype(int)
+print(df[['charges', 'region']].corr())
