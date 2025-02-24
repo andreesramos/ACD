@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("insurance.csv")
 encoded = OrdinalEncoder()
@@ -27,3 +28,25 @@ print('\nCorrelación de la region con costo de seguro')
 df[['region']] = encoded.fit_transform(df[['region']])
 df[['region']] = df[['region']].astype(int)
 print(df[['charges', 'region']].corr())
+
+#Identificación de valores nulos
+dt = df[['charges','age', 'bmi', 'smoker']]
+print("\nIdentificación de valores nulos")
+print(dt.isnull().sum())
+
+#Identificación de valores erróneos
+#Edad
+precios_edad = df.groupby("age")["charges"].mean()
+precios_edad.plot(title="Costo de seguro por edad", figsize=(10, 6))
+plt.show()
+
+#BMI
+precios_bmi = df.groupby("bmi")["charges"].mean()
+precios_bmi.plot(title="Costo de seguro por BMI", figsize=(10, 6))
+plt.show()
+
+#Fumador
+otros_valores = df[df['smoker'].isin(['yes', 'no'])]
+conteo_otros = otros_valores.shape[0]
+
+print(f"Cantidad de valores diferentes a 'yes' y 'no': {conteo_otros}")
